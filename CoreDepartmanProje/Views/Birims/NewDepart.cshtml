@@ -1,0 +1,12 @@
+﻿@model CoreDepartmanProje.Models.Birim
+@{
+    ViewData["Title"] = "NewDepart";
+    Layout = "~/Views/Shared/_LayoutDept.cshtml";
+}
+<br />
+<form class="form-group">
+    <b>Depart Name</b>
+    @Html.TextBoxFor(x => x.BirimAd, new {@class="form-control"})
+    <br />
+    <button class="btn btn-info">Add Depart</button>
+</form>

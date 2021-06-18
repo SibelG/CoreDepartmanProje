@@ -1,0 +1,17 @@
+﻿@model CoreDepartmanProje.Models.Birim
+@{
+    ViewData["Title"] = "GetDepart";
+    Layout = "~/Views/Shared/_LayoutDept.cshtml";
+}
+
+@using (Html.BeginForm("UpdateDepart", "Birims", FormMethod.Post))
+{
+    <b>Depart ID</b>
+    @Html.TextBoxFor(x => x.BirimId, new { @class = "form-control" })
+    <br />
+    <b>Depart Name</b>
+    @Html.TextBoxFor(x => x.BirimAd, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info"style="background-color:coral;color:black;">Update Depart</button>
+}
+
